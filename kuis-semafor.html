@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+  <title>Semaphore Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="zet.png">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: rgb(59, 0, 0)" onload="NextQuestion(0)">
+    <header name="top">     
+    <div class="container">
+            <div class="header-left">
+                <a href="#top" class="active">
+                    <!--img class="logo" src="logo-fadillah.png" title="FADILLAH"-->
+                    <img class="logo-apk" src="semaphorechallenge.jpg" title="Semaphore Challenge" width="auto" height="55px" 
+                        style="margin-top: 5px; border-radius: 50px;"> 
+                </a>
+            </div>
+        <div class="nav" id="myTopnav">  
+                <a href="semafor.html">Back</a>   
+        </div>
+        </div>
+    </header>   
+
+    <div class="animated fadeIn delay-0s">  
+        <div class="top-wrapper" align="center" style="background-image: url(riverpath.jpg)">
+            <div class="container">  
+                    <main>
+                        <!-- creating a modal for when quiz ends -->
+                        <div class="modal-container" id="score-modal">
+                
+                            <h1 style="background-color: rgb(22, 22, 22); margin-top: 25px; padding-left: 50px; padding-right: 50px;
+                                border-top-right-radius: 20px; border-top-left-radius: 20px; font-size: large;">Quiz Completed</h1>
+                            <div class="modal-content-container">
+                
+                
+                                <div class="grade-details">  
+                                    <p style="font-size: large;">Correct Answers : <span id="right-answers"></span></p>
+                                    <p style="font-size: large;">Your Score<br><br><span id="grade-percentage" style="font-size: 50px;"></span></p>
+                                    <p style="font-size: large;"><span id="remarks"></span></p>
+                                </div> 
+                                <div class="modal-button-container">
+                                    <button onclick="closeScoreModal()">Play Again</button>
+                                    <button onclick="window.location.href='https://www.buymeacoffee.com/emhabeel/semaphore-challenge';">More Quiz</button>
+                                </div> 
+                            </div>
+                        </div>
+                <!-- end of modal of quiz details-->
+                
+                <div class="game-details-container" 
+                    style="background-color: rgba(0, 0, 0, 0.774);
+                        width: fit-content; border-top-right-radius: 20px; border-top-left-radius: 20px; ">
+                    <h1 style="font-size: large;"> Question : <span id="question-number"></span> / 20</h1>
+                </div>
+                        <div class="game-quiz-container">
+                            <div class="game-details-container">
+                                <h1><span id="player-score"></span></h1>
+                            </div>
+                
+                            <div class="game-question-container">
+                                <h1 id="display-question"></h1>
+                            </div>
+                
+                            <div class="game-options-container">
+                
+                               <div class="modal-container" id="option-modal">
+                
+                                    <div class="modal-content-container">
+                                         <h1>Please Pick An Option</h1>
+                
+                                         <div class="modal-button-container">
+                                            <button onclick="closeOptionModal()">Continue</button>
+                                        </div>
+                
+                                    </div>
+                
+                               </div>
+                
+                                <span>
+                                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" onclick="handleNextQuestion()"/>
+                                    <label for="option-one" class="option" id="option-one-label"></label>
+                                </span>
+                
+                
+                                <span>
+                                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" onclick="handleNextQuestion()"/>
+                                    <label for="option-two" class="option" id="option-two-label"></label>
+                                </span>
+                
+                            </div>
+                 
+                
+                        </div>
+                    </main>
+                    <script src="semafor.js"></script> 
+            </div>  
+        </div>
+    </div>  
+
+    <footer>
+        <div class="footer-logo" name="footer">
+            <img class="logo-apk" src="title.png" title="Semaphore Challenge" width="auto" height="55px" 
+            style="margin-top: 5px; border-radius: 10px;">
+        </div>
+        <p id="copyright"><!--2020-->Emhabeel©2025</p>
+    </footer>  
+</body>
+</html>
