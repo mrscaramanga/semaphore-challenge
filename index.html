@@ -16,8 +16,7 @@
 <header name="top">     
 <div class="container">
         <div class="header-left">
-            <a href="#top" class="active">
-                <!--img class="logo" src="logo-fadillah.png" title="FADILLAH"-->
+            <a href="#top" class="active"> 
                 <img class="logo-apk" src="semaphorechallenge.jpg" title="Semaphore Challenge" width="auto" height="55px" 
                     style="margin-top: 5px; border-radius: 50px;"> 
             </a>
@@ -38,7 +37,7 @@
                     <img src="emhabeelsemaphore.gif" width="auto" height="180px" title="EMHABEEL">
                     <div class="button"> 
                         <a class="btn-semafor" href="https://drive.google.com/file/d/1YHO0vQV9fq-v7WBZrY_vbGv1OrTU7gFB/view?usp=drive_link">Android apk<p>Download</p></a>
-                        <a class="btn-semafor" href="kuis-semafor.html">Take a quiz<p>5-10 min</p></a>
+                        <a class="btn-semafor" href="kuis-">Take a quiz<p>5-10 min</p></a>
                     </div>  
             </div>  
         </div>
@@ -48,7 +47,7 @@
     <h2>Semaphore</h2>   
     <p style="margin: 20px; text-align: center;">Semaphore is a way to communicate across long distances with two flags in different positions to represent letters or numbers</p>
     <center>
-        <img src="arms.png" style="background-color: whitesmoke; height: 100px;" title="Description">
+        <img src="arms.png" style="background-color: whitesmoke; height: 100px; margin: 20px;" title="Description">
     </center>
 </div> 
  <div class="slideshow-container"> 
@@ -360,12 +359,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
-  <script>
-    function play(id) {
-      var audio = document.getElementById('audio'+id);
-      audio.play();  
-    }
-  </script>
+  
   <!-- The dots/circles -->
   <center>
         <div style="max-width: 700px;">
@@ -452,7 +446,11 @@
             </div> 
         </div>
     </center>
-  <script>
+  <script> 
+    function play(id) {
+      var audio = document.getElementById('audio'+id);
+      audio.play();  
+    } 
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -480,17 +478,8 @@
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active-dot";
-        } 
-  </script>
-    
-    <footer>
-        <div class="footer-logo" name="footer">
-            <img class="logo-apk" src="title.png" title="Semaphore Challenge" width="auto" height="55px" 
-            style="margin-top: 5px; border-radius: 10px;">
-        </div>
-        <p id="copyright"><!--2020-->Emhabeel©2025</p>
-    </footer> 
-    <script>
+        }  
+
         /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
         function myFunction() {
             var x = document.getElementById("myTopnav");
@@ -500,6 +489,33 @@
                 x.className = "nav";
             }
         }
-    </script> 
+  </script>
+    
+  <div class="apk-desc">
+    <h3 style="text-align: center;">Apk Description</h3> <br>
+      <p>
+        App Name: Semaphore Challenge<br>
+        Developer: Emhabeel<br>
+        Download: <a href="https://drive.google.com/file/d/1YHO0vQV9fq-v7WBZrY_vbGv1OrTU7gFB/view?usp=drive_link">Click Link Here</a><br>
+        Released: 4 July 2023<br>
+        Platform: Android<br>
+        Min sdk: Android 7 (Nougat) above<br> <br> 
+        Key Features:<br>
+        <ul>
+          <li>Dual Learning Mode: Use Flashcards and challenging Quizzes to master both Semaphore and Morse Code.</li>
+          <li>Complete Visuals: Every category includes a cute picture, Semaphore flag, and corresponding Morse Code for efficient learning.</li>
+          <li>Progress Tracking: Create an account to securely store your scores and recent activity.</li>
+          <li>Full Data Control: Easily create or delete your account and data anytime.</li>
+          <li>Flexible Access: Play seamlessly in Online and Offline modes.</li></ul>
+      </p>
+  </div>
+  
+ <footer>
+        <div class="footer-logo" name="footer">
+            <img class="logo-apk" src="title.png" title="Semaphore Challenge" width="auto" height="55px" 
+            style="margin-top: 5px; border-radius: 10px;">
+        </div>
+        <p id="copyright">Emhabeel©2025</p>
+    </footer>  
     </body>
 </html>
