@@ -594,15 +594,22 @@ input[type=radio]:checked ~ .option {
       width: 80%;
   } 
 }
-
-
-
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
 }
-
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+.apk-desc {
+  width: 300px; height: auto; padding: 20px; 
+  margin: 50px auto; align-items: center; justify-content: center; border-radius: 20px;
+  background-color: #360000a6; position: relative;
+}
+.apk-desc a {
+  text-decoration: underline; color: gold;
+}
+.apk-desc a:hover {
+  color: #A3090E;
 }
